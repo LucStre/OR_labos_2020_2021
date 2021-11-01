@@ -1,0 +1,1522 @@
+[
+    {
+       "actorid":1,
+       "name":"Chris",
+       "surname":"Hemsworth",
+       "middlename":null,
+       "birthdate":"1983-08-11",
+       "birthplace":"Australia",
+       "height":1.9,
+       "marriage":true,
+       "children":3,
+       "siblings":2,
+       "startyear":2002,
+       "favfood":"pizza",
+       "favcolor":"black",
+       "favbook":"Lord of the Rings",
+       "films":[
+          {
+             "filmid":1,
+             "name":"The Huntsman: Winter's War",
+             "director":"Cedric Nicolas-Troyan",
+             "year":2016
+          },
+          {
+             "filmid":3,
+             "name":"Avengers: Endgame",
+             "director":"Anthony Russo, Joe Russo",
+             "year":2019
+          },
+          {
+             "filmid":4,
+             "name":"Avengers: Infinity War",
+             "director":"Anthony Russo, Joe Russo",
+             "year":2018
+          },
+          {
+             "filmid":5,
+             "name":"Doctor Strange",
+             "director":"Scott Derrickson",
+             "year":2016
+          },
+          {
+             "filmid":6,
+             "name":"Thor: Ragnarok",
+             "director":"Taika Waititi",
+             "year":2017
+          },
+          {
+             "filmid":7,
+             "name":"Star Trek Into Darkness",
+             "director":"J.J. Abrams",
+             "year":2013
+          },
+          {
+             "filmid":8,
+             "name":"Star Trek",
+             "director":"J.J. Abrams",
+             "year":2009
+          },
+          {
+             "filmid":9,
+             "name":"Thor",
+             "director":"Kenneth Branagh",
+             "year":2011
+          }
+       ],
+       "awards":[
+          {
+             "awardid":1,
+             "awardname":"Australian Star of the Year",
+             "awardfor":null,
+             "year":2016,
+             "rolein":null,
+             "actorid":1
+          },
+          {
+             "awardid":2,
+             "awardname":"CinemaCon Award",
+             "awardfor":"Male Star of Tomorrow",
+             "year":2011,
+             "rolein":null,
+             "actorid":1
+          },
+          {
+             "awardid":3,
+             "awardname":"Huading Award",
+             "awardfor":"Best Global Actor in a Motion Picture",
+             "year":2015,
+             "rolein":"Thor: The Dark World",
+             "actorid":1
+          },
+          {
+             "awardid":4,
+             "awardname":"People's Choice Award",
+             "awardfor":"Favorite Action Movie Star",
+             "year":2020,
+             "rolein":"Extraction",
+             "actorid":1
+          },
+          {
+             "awardid":5,
+             "awardname":"Teen Choice Award",
+             "awardfor":"Choice Movie Actor: Sci-Fi",
+             "year":2018,
+             "rolein":"Thor: Ragnarok",
+             "actorid":1
+          }
+       ]
+    },
+    {
+       "actorid":2,
+       "name":"Emily",
+       "surname":"Blunt",
+       "middlename":"Olivia Leah",
+       "birthdate":"1983-02-23",
+       "birthplace":"England",
+       "height":1.71,
+       "marriage":true,
+       "children":2,
+       "siblings":3,
+       "startyear":2001,
+       "favfood":"lasagna",
+       "favcolor":"black",
+       "favbook":"To Kill a Mockingbird",
+       "films":[
+          {
+             "filmid":1,
+             "name":"The Huntsman: Winter's War",
+             "director":"Cedric Nicolas-Troyan",
+             "year":2016
+          },
+          {
+             "filmid":10,
+             "name":"Mary Poppins Returns",
+             "director":"Rob Marshall",
+             "year":2018
+          },
+          {
+             "filmid":11,
+             "name":"A Quiet Place",
+             "director":"John Krasinski",
+             "year":2018
+          },
+          {
+             "filmid":12,
+             "name":"The Girl on the Train",
+             "director":"Tate Taylor",
+             "year":2016
+          },
+          {
+             "filmid":13,
+             "name":"Into the Woods",
+             "director":"Rob Marshall",
+             "year":2014
+          },
+          {
+             "filmid":14,
+             "name":"The Devil Wears Prada",
+             "director":"David Frankel",
+             "year":2006
+          },
+          {
+             "filmid":15,
+             "name":"The Young Victoria",
+             "director":"Jean-Marc Vall�e",
+             "year":2009
+          }
+       ],
+       "awards":[
+          {
+             "awardid":6,
+             "awardname":"Saturn Award",
+             "awardfor":"Best Supporting Actress",
+             "year":2012,
+             "rolein":"The Adjustment Bureau ",
+             "actorid":2
+          },
+          {
+             "awardid":7,
+             "awardname":"EDA Female Focus Award",
+             "awardfor":"Kick Ass Award for Best Female Action Star",
+             "year":2015,
+             "rolein":"Edge of Tomorrow",
+             "actorid":2
+          },
+          {
+             "awardid":8,
+             "awardname":"Britannia Award",
+             "awardfor":"British Artist of the Year",
+             "year":2009,
+             "rolein":null,
+             "actorid":2
+          }
+       ]
+    },
+    {
+       "actorid":3,
+       "name":"Meryl",
+       "surname":"Streep",
+       "middlename":"Louise",
+       "birthdate":"1949-06-22",
+       "birthplace":"USA",
+       "height":1.68,
+       "marriage":true,
+       "children":4,
+       "siblings":2,
+       "startyear":1977,
+       "favfood":"chicken pot pie with black truffles",
+       "favcolor":"pink",
+       "favbook":"Heartburn",
+       "films":[
+          {
+             "filmid":2,
+             "name":"Mamma Mia",
+             "director":"Phyllida Lloyd",
+             "year":2008
+          },
+          {
+             "filmid":13,
+             "name":"Into the Woods",
+             "director":"Rob Marshall",
+             "year":2014
+          },
+          {
+             "filmid":14,
+             "name":"The Devil Wears Prada",
+             "director":"David Frankel",
+             "year":2006
+          },
+          {
+             "filmid":10,
+             "name":"Mary Poppins Returns",
+             "director":"Rob Marshall",
+             "year":2018
+          },
+          {
+             "filmid":16,
+             "name":"Enola Holmes",
+             "director":"Harry Bradbeer",
+             "year":2020
+          },
+          {
+             "filmid":17,
+             "name":"Alice in Wonderland",
+             "director":"Tim Burton",
+             "year":2010
+          },
+          {
+             "filmid":30,
+             "name":"Little Women",
+             "director":"Greta Gerwig",
+             "year":2019
+          },
+          {
+             "filmid":31,
+             "name":"Mamma Mia! Here We Go Again",
+             "director":"Ol Parker",
+             "year":2018
+          },
+          {
+             "filmid":32,
+             "name":"Suffragette",
+             "director":"Sarah Gavron",
+             "year":2015
+          },
+          {
+             "filmid":33,
+             "name":"The Iron Lady",
+             "director":"Phyllida Lloyd",
+             "year":2011
+          },
+          {
+             "filmid":34,
+             "name":"Julie & Julia",
+             "director":"Nora Ephron",
+             "year":2009
+          },
+          {
+             "filmid":35,
+             "name":"It's Complicated",
+             "director":"Nancy Meyers",
+             "year":2009
+          }
+       ],
+       "awards":[
+          {
+             "awardid":9,
+             "awardname":"Oscar",
+             "awardfor":"Best Performance by an Actress in a Leading Role",
+             "year":2012,
+             "rolein":"The Iron Lady",
+             "actorid":3
+          },
+          {
+             "awardid":10,
+             "awardname":"Oscar",
+             "awardfor":"Best Actress in a Leading Role",
+             "year":1983,
+             "rolein":"Sophie's Choice",
+             "actorid":3
+          },
+          {
+             "awardid":11,
+             "awardname":"Oscar",
+             "awardfor":"Best Actress in a Leading Role",
+             "year":1980,
+             "rolein":"Kramer vs. Kramer",
+             "actorid":3
+          },
+          {
+             "awardid":12,
+             "awardname":"Primetime Emmy",
+             "awardfor":"Outstanding Narrator",
+             "year":2017,
+             "rolein":"Five Came Back",
+             "actorid":3
+          },
+          {
+             "awardid":13,
+             "awardname":"Primetime Emmy",
+             "awardfor":"Outstanding Lead Actress in a Miniseries or a Movie",
+             "year":2004,
+             "rolein":"Angels in America",
+             "actorid":3
+          },
+          {
+             "awardid":14,
+             "awardname":"BAFTA Film Award",
+             "awardfor":"Best Leading Actress",
+             "year":2012,
+             "rolein":"The Iron Lady",
+             "actorid":3
+          },
+          {
+             "awardid":15,
+             "awardname":"AACTA International Award",
+             "awardfor":"Best Actress",
+             "year":2017,
+             "rolein":"The Iron Lady",
+             "actorid":3
+          }
+       ]
+    },
+    {
+       "actorid":6,
+       "name":"Cate",
+       "surname":"Blanchett",
+       "middlename":"�lise",
+       "birthdate":"1969-05-14",
+       "birthplace":"Australia",
+       "height":1.74,
+       "marriage":true,
+       "children":4,
+       "siblings":2,
+       "startyear":1996,
+       "favfood":"cheese and vegemite on toast",
+       "favcolor":"persian blue",
+       "favbook":"The Uses of Enchantment: The Meaning and Importance of Fairy Tales",
+       "films":[
+          {
+             "filmid":87,
+             "name":"The Aviator",
+             "director":"Martin Scorsese",
+             "year":2014
+          },
+          {
+             "filmid":39,
+             "name":"The Lord of the Rings: The Fellowship of the Ring",
+             "director":"Peter Jackson",
+             "year":2001
+          },
+          {
+             "filmid":40,
+             "name":"The Lord of the Rings: The Two Towers",
+             "director":"Peter Jackson",
+             "year":2002
+          },
+          {
+             "filmid":41,
+             "name":"The Lord of the Rings: The Return of the King",
+             "director":"Peter Jackson",
+             "year":2003
+          },
+          {
+             "filmid":42,
+             "name":"The Hobbit: An Unexpected Journey",
+             "director":"Peter Jackson",
+             "year":2012
+          },
+          {
+             "filmid":43,
+             "name":"The Hobbit: The Desolation of Smaug",
+             "director":"Peter Jackson",
+             "year":2013
+          },
+          {
+             "filmid":44,
+             "name":"The Hobbit: The Battle of the Five Armies",
+             "director":"Peter Jackson",
+             "year":2014
+          },
+          {
+             "filmid":45,
+             "name":"Indiana Jones and the Kingdom of the Crystal Skull",
+             "director":"Steven Spielberg",
+             "year":2008
+          },
+          {
+             "filmid":46,
+             "name":"Robin Hood",
+             "director":"Ridley Scott",
+             "year":2010
+          },
+          {
+             "filmid":6,
+             "name":"Thor: Ragnarok",
+             "director":"Taika Waititi",
+             "year":2017
+          },
+          {
+             "filmid":20,
+             "name":"Ocean's Eight",
+             "director":"Gary Ross",
+             "year":2018
+          },
+          {
+             "filmid":21,
+             "name":"Cinderella",
+             "director":"Kenneth Branagh",
+             "year":2015
+          }
+       ],
+       "awards":[
+          {
+             "awardid":25,
+             "awardname":"Oscar",
+             "awardfor":"Best Performance by an Actress in a Leading Role",
+             "year":2014,
+             "rolein":"Blue Jasmine",
+             "actorid":6
+          },
+          {
+             "awardid":26,
+             "awardname":"Oscar",
+             "awardfor":"Best Performance by an Actress in a Supporting Role",
+             "year":2013,
+             "rolein":"The Aviator",
+             "actorid":6
+          },
+          {
+             "awardid":27,
+             "awardname":"BAFTA Film Award",
+             "awardfor":"Best Leading Actress",
+             "year":2014,
+             "rolein":"Blue Jasmine",
+             "actorid":6
+          },
+          {
+             "awardid":28,
+             "awardname":"ACCA",
+             "awardfor":"Best Cast Ensemble",
+             "year":2001,
+             "rolein":"The Lord of the Rings: The Fellowship of the Ring",
+             "actorid":6
+          },
+          {
+             "awardid":29,
+             "awardname":"Britannia Award",
+             "awardfor":"Stanley Kubrick Britannia Award for Excellence in Film",
+             "year":2018,
+             "rolein":null,
+             "actorid":6
+          }
+       ]
+    },
+    {
+       "actorid":7,
+       "name":"Orlando",
+       "surname":"Bloom",
+       "middlename":null,
+       "birthdate":"1977-01-13",
+       "birthplace":"UK",
+       "height":1.8,
+       "marriage":false,
+       "children":2,
+       "siblings":3,
+       "startyear":1994,
+       "favfood":"steaks, seafood and lamb",
+       "favcolor":"dark orchid",
+       "favbook":"The fountainhead",
+       "films":[
+          {
+             "filmid":39,
+             "name":"The Lord of the Rings: The Fellowship of the Ring",
+             "director":"Peter Jackson",
+             "year":2001
+          },
+          {
+             "filmid":40,
+             "name":"The Lord of the Rings: The Two Towers",
+             "director":"Peter Jackson",
+             "year":2002
+          },
+          {
+             "filmid":41,
+             "name":"The Lord of the Rings: The Return of the King",
+             "director":"Peter Jackson",
+             "year":2003
+          },
+          {
+             "filmid":42,
+             "name":"The Hobbit: An Unexpected Journey",
+             "director":"Peter Jackson",
+             "year":2012
+          },
+          {
+             "filmid":43,
+             "name":"The Hobbit: The Desolation of Smaug",
+             "director":"Peter Jackson",
+             "year":2013
+          },
+          {
+             "filmid":44,
+             "name":"The Hobbit: The Battle of the Five Armies",
+             "director":"Peter Jackson",
+             "year":2014
+          },
+          {
+             "filmid":47,
+             "name":"Pirates of the Caribbean: The Curse of the Black Pearl",
+             "director":"Gore Verbinski",
+             "year":2003
+          },
+          {
+             "filmid":48,
+             "name":"Pirates of the Caribbean: Dead Man's Chest",
+             "director":"Gore Verbinski",
+             "year":2006
+          },
+          {
+             "filmid":49,
+             "name":"Pirates of the Caribbean: At World's End",
+             "director":"Gore Verbinski",
+             "year":2007
+          },
+          {
+             "filmid":50,
+             "name":"Pirates of the Caribbean: Dead Men Tell No Tales",
+             "director":"Joachim R�nning, Espen Sandberg",
+             "year":2017
+          },
+          {
+             "filmid":51,
+             "name":"Kingdom of Heaven",
+             "director":"Ridley Scott",
+             "year":20005
+          },
+          {
+             "filmid":52,
+             "name":"Romeo and Juliet",
+             "director":"Don Roy King",
+             "year":2014
+          },
+          {
+             "filmid":53,
+             "name":"Troy",
+             "director":"Wolfgang Petersen",
+             "year":2004
+          }
+       ],
+       "awards":[
+          {
+             "awardid":30,
+             "awardname":"ACCA",
+             "awardfor":"Best Cast Ensemble",
+             "year":2003,
+             "rolein":"The Lord of the Rings: The Return of the King",
+             "actorid":7
+          },
+          {
+             "awardid":31,
+             "awardname":"Empire Award",
+             "awardfor":"Best Debut",
+             "year":2002,
+             "rolein":"The Lord of the Rings: The Fellowship of the Ring",
+             "actorid":7
+          },
+          {
+             "awardid":32,
+             "awardname":"EFA People's Choice Award",
+             "awardfor":"Best European Actor",
+             "year":2005,
+             "rolein":"Kingdom of Heaven",
+             "actorid":7
+          },
+          {
+             "awardid":33,
+             "awardname":"Huading Award",
+             "awardfor":"Best Global Actor in a Motion Picture",
+             "year":2014,
+             "rolein":"The Hobbit: The Desolation of Smaug",
+             "actorid":7
+          },
+          {
+             "awardid":34,
+             "awardname":"MTV Movie Award",
+             "awardfor":"Best Fight",
+             "year":2014,
+             "rolein":"The Hobbit: The Desolation of Smaug",
+             "actorid":7
+          }
+       ]
+    },
+    {
+       "actorid":8,
+       "name":"Johnny",
+       "surname":"Depp",
+       "middlename":"Christopher",
+       "birthdate":"1963-06-09",
+       "birthplace":"USA",
+       "height":1.78,
+       "marriage":true,
+       "children":2,
+       "siblings":3,
+       "startyear":1984,
+       "favfood":"mexican",
+       "favcolor":"black",
+       "favbook":"Ulysses",
+       "films":[
+          {
+             "filmid":47,
+             "name":"Pirates of the Caribbean: The Curse of the Black Pearl",
+             "director":"Gore Verbinski",
+             "year":2003
+          },
+          {
+             "filmid":48,
+             "name":"Pirates of the Caribbean: Dead Man's Chest",
+             "director":"Gore Verbinski",
+             "year":2006
+          },
+          {
+             "filmid":49,
+             "name":"Pirates of the Caribbean: At World's End",
+             "director":"Gore Verbinski",
+             "year":2007
+          },
+          {
+             "filmid":50,
+             "name":"Pirates of the Caribbean: Dead Men Tell No Tales",
+             "director":"Joachim R�nning, Espen Sandberg",
+             "year":2017
+          },
+          {
+             "filmid":54,
+             "name":"Dark Shadows",
+             "director":"Tim Burton",
+             "year":2012
+          },
+          {
+             "filmid":55,
+             "name":"Don Juan DeMarco",
+             "director":"Jeremy Leven",
+             "year":1994
+          },
+          {
+             "filmid":56,
+             "name":"The Tourist",
+             "director":"Florian Henckel von Donnersmarck",
+             "year":2010
+          },
+          {
+             "filmid":57,
+             "name":"Pirates of the Caribbean: On Stranger Tides",
+             "director":"Rob Marshall",
+             "year":2011
+          },
+          {
+             "filmid":18,
+             "name":"Charlie and the Chocolate Factory",
+             "director":"Tim Burton",
+             "year":2005
+          },
+          {
+             "filmid":17,
+             "name":"Alice in Wonderland",
+             "director":"Tim Burton",
+             "year":2010
+          }
+       ],
+       "awards":[
+          {
+             "awardid":35,
+             "awardname":"ACCA",
+             "awardfor":"Best Actor in a Leading Role",
+             "year":2003,
+             "rolein":"Pirates of the Caribbean: The Curse of the Black Pearl",
+             "actorid":8
+          },
+          {
+             "awardid":36,
+             "awardname":"Empire Award",
+             "awardfor":"Best Actor",
+             "year":2006,
+             "rolein":"Charlie and the Chocolate Factory",
+             "actorid":8
+          },
+          {
+             "awardid":37,
+             "awardname":"Golden Globe",
+             "awardfor":"Best Performance by an Actor in a Motion Picture - Comedy or Musical",
+             "year":2008,
+             "rolein":"Sweeney Todd: The Demon Barber of Fleet Street",
+             "actorid":8
+          },
+          {
+             "awardid":38,
+             "awardname":"Golden Schmoes",
+             "awardfor":"Favorite Celebrity of the Year",
+             "year":2007,
+             "rolein":null,
+             "actorid":8
+          },
+          {
+             "awardid":39,
+             "awardname":"Jupiter Award",
+             "awardfor":"Best International Actor",
+             "year":2007,
+             "rolein":"Pirates of the Caribbean: Dead Man's Chest",
+             "actorid":8
+          }
+       ]
+    },
+    {
+       "actorid":9,
+       "name":"Leonardo",
+       "surname":"DiCaprio",
+       "middlename":"Wilhelm",
+       "birthdate":"1974-11-11",
+       "birthplace":"UK",
+       "height":1.83,
+       "marriage":true,
+       "children":0,
+       "siblings":1,
+       "startyear":1988,
+       "favfood":"pupusas",
+       "favcolor":"dark green",
+       "favbook":"The Garden of Eden",
+       "films":[
+          {
+             "filmid":87,
+             "name":"The Aviator",
+             "director":"Martin Scorsese",
+             "year":2014
+          },
+          {
+             "filmid":58,
+             "name":"Romeo + Juliet",
+             "director":"Baz Luhrmann",
+             "year":1996
+          },
+          {
+             "filmid":59,
+             "name":"Titanic",
+             "director":"James Cameron",
+             "year":1997
+          },
+          {
+             "filmid":60,
+             "name":"Catch Me If You Can",
+             "director":"Steven Spielberg",
+             "year":2002
+          },
+          {
+             "filmid":61,
+             "name":"Shutter Island",
+             "director":"Martin Scorsese",
+             "year":2010
+          },
+          {
+             "filmid":62,
+             "name":"Inception",
+             "director":"Christopher Nolan",
+             "year":2010
+          },
+          {
+             "filmid":63,
+             "name":"The Great Gatsby",
+             "director":"Baz Luhrmann",
+             "year":2013
+          },
+          {
+             "filmid":64,
+             "name":"The Revenant",
+             "director":"Alejandro G. I��rritu",
+             "year":2015
+          }
+       ],
+       "awards":[
+          {
+             "awardid":40,
+             "awardname":"Oscar",
+             "awardfor":"Best Performance by an Actor in a Leading Role",
+             "year":2016,
+             "rolein":"The Revenant",
+             "actorid":9
+          },
+          {
+             "awardid":41,
+             "awardname":"BAFTA Film Award",
+             "awardfor":"Best Leading Actor",
+             "year":2016,
+             "rolein":"The Revenant",
+             "actorid":9
+          },
+          {
+             "awardid":42,
+             "awardname":"Silver Berlin Bear",
+             "awardfor":"Best Actor",
+             "year":1997,
+             "rolein":"Romeo + Juliet",
+             "actorid":9
+          },
+          {
+             "awardid":43,
+             "awardname":"Blockbuster Entertainment Award",
+             "awardfor":"Favorite Actor - Drama",
+             "year":1998,
+             "rolein":"Titanic",
+             "actorid":9
+          }
+       ]
+    },
+    {
+       "actorid":10,
+       "name":"Benedict",
+       "surname":"Cumberbatch",
+       "middlename":null,
+       "birthdate":"1976-07-19",
+       "birthplace":"USA",
+       "height":1.83,
+       "marriage":true,
+       "children":3,
+       "siblings":1,
+       "startyear":2001,
+       "favfood":"tapas",
+       "favcolor":"blue",
+       "favbook":"Sherlock Holmes' Rediscovered Railway Stories",
+       "films":[
+          {
+             "filmid":65,
+             "name":"The Imitation Game",
+             "director":"Morten Tyldum",
+             "year":2014
+          },
+          {
+             "filmid":42,
+             "name":"The Hobbit: An Unexpected Journey",
+             "director":"Peter Jackson",
+             "year":2012
+          },
+          {
+             "filmid":43,
+             "name":"The Hobbit: The Desolation of Smaug",
+             "director":"Peter Jackson",
+             "year":2013
+          },
+          {
+             "filmid":44,
+             "name":"The Hobbit: The Battle of the Five Armies",
+             "director":"Peter Jackson",
+             "year":2014
+          },
+          {
+             "filmid":7,
+             "name":"Star Trek Into Darkness",
+             "director":"J.J. Abrams",
+             "year":2013
+          },
+          {
+             "filmid":6,
+             "name":"Thor: Ragnarok",
+             "director":"Taika Waititi",
+             "year":2017
+          },
+          {
+             "filmid":3,
+             "name":"Avengers: Endgame",
+             "director":"Anthony Russo, Joe Russo",
+             "year":2019
+          },
+          {
+             "filmid":4,
+             "name":"Avengers: Infinity War",
+             "director":"Anthony Russo, Joe Russo",
+             "year":2018
+          },
+          {
+             "filmid":5,
+             "name":"Doctor Strange",
+             "director":"Scott Derrickson",
+             "year":2016
+          }
+       ],
+       "awards":[
+          {
+             "awardid":44,
+             "awardname":"Primetime Emmy",
+             "awardfor":"Outstanding Lead Actor in a Miniseries or a Movie",
+             "year":2014,
+             "rolein":"Sherlock",
+             "actorid":10
+          },
+          {
+             "awardid":45,
+             "awardname":"BAFTA TV Award",
+             "awardfor":"Best Leading Actor",
+             "year":2019,
+             "rolein":"Patrick Melrose",
+             "actorid":10
+          },
+          {
+             "awardid":46,
+             "awardname":"Variety Award",
+             "awardfor":null,
+             "year":2014,
+             "rolein":null,
+             "actorid":10
+          },
+          {
+             "awardid":47,
+             "awardname":"Dagger",
+             "awardfor":"Best Leading Actor",
+             "year":2012,
+             "rolein":"Sherlock",
+             "actorid":10
+          }
+       ]
+    },
+    {
+       "actorid":11,
+       "name":"George",
+       "surname":"Clooney",
+       "middlename":null,
+       "birthdate":"1961-05-06",
+       "birthplace":"USA",
+       "height":1.8,
+       "marriage":true,
+       "children":2,
+       "siblings":1,
+       "startyear":1978,
+       "favfood":"steak",
+       "favcolor":"black",
+       "favbook":"Leo Tolstoy's War and Peace",
+       "films":[
+          {
+             "filmid":76,
+             "name":"Ocean's Eleven",
+             "director":"Steven Soderbergh",
+             "year":2001
+          },
+          {
+             "filmid":77,
+             "name":"Ocean's Twelve",
+             "director":"Steven Soderbergh",
+             "year":2004
+          },
+          {
+             "filmid":78,
+             "name":"Ocean's Thirteen",
+             "director":"Steven Soderbergh",
+             "year":2007
+          },
+          {
+             "filmid":79,
+             "name":"Gravity",
+             "director":"Alfonso Cuar�n",
+             "year":2013
+          },
+          {
+             "filmid":80,
+             "name":"Intolerable Cruelty",
+             "director":"Joel Coen, Ethan Coen",
+             "year":2003
+          }
+       ],
+       "awards":[
+          {
+             "awardid":48,
+             "awardname":"Oscar",
+             "awardfor":"Best Motion Picture of the Year",
+             "year":2013,
+             "rolein":"Argo",
+             "actorid":11
+          },
+          {
+             "awardid":49,
+             "awardname":"Oscar",
+             "awardfor":"Best Performance by an Actor in a Supporting Role",
+             "year":2006,
+             "rolein":"Syriana",
+             "actorid":11
+          },
+          {
+             "awardid":50,
+             "awardname":"AACTA International Award",
+             "awardfor":"Best Screenplay",
+             "year":2012,
+             "rolein":"The Ides of March",
+             "actorid":11
+          },
+          {
+             "awardid":51,
+             "awardname":"Saturn Award",
+             "awardfor":"Best Actor",
+             "year":1996,
+             "rolein":"From Dusk Till Dawn",
+             "actorid":11
+          }
+       ]
+    },
+    {
+       "actorid":12,
+       "name":"Jennifer",
+       "surname":"Lawrence",
+       "middlename":"Shrader",
+       "birthdate":"1990-08-15",
+       "birthplace":"USA",
+       "height":1.75,
+       "marriage":true,
+       "children":0,
+       "siblings":2,
+       "startyear":2006,
+       "favfood":"chili pizza sandwich",
+       "favcolor":"gold",
+       "favbook":"The Other Boleyn Girl",
+       "films":[
+          {
+             "filmid":66,
+             "name":"The Hunger Games",
+             "director":"Gary Ross",
+             "year":2012
+          },
+          {
+             "filmid":67,
+             "name":"The Hunger Games: Catching Fire",
+             "director":"Francis Lawrence",
+             "year":2013
+          },
+          {
+             "filmid":68,
+             "name":"The Hunger Games: Mockingjay - Part 1",
+             "director":"Francis Lawrence",
+             "year":2014
+          },
+          {
+             "filmid":69,
+             "name":"The Hunger Games: Mockingjay - Part 2",
+             "director":"Francis Lawrence",
+             "year":2015
+          },
+          {
+             "filmid":70,
+             "name":"X-Men: First Class",
+             "director":"Matthew Vaughn",
+             "year":2011
+          },
+          {
+             "filmid":71,
+             "name":"X-Men: Days of Future Past",
+             "director":"Bryan Singer",
+             "year":2014
+          },
+          {
+             "filmid":72,
+             "name":"X-Men: Apocalypse",
+             "director":"Bryan Singer",
+             "year":20186
+          },
+          {
+             "filmid":73,
+             "name":"X-Men: Dark Phoenix",
+             "director":"Simon Kinberg",
+             "year":2019
+          },
+          {
+             "filmid":74,
+             "name":"Joy",
+             "director":"David O. Russell",
+             "year":2015
+          },
+          {
+             "filmid":75,
+             "name":"Passengers",
+             "director":"Morten Tyldum",
+             "year":2016
+          }
+       ],
+       "awards":[
+          {
+             "awardid":52,
+             "awardname":"Oscar",
+             "awardfor":"Best Performance by an Actress in a Leading Role",
+             "year":2013,
+             "rolein":"Silver Linings Playbook",
+             "actorid":12
+          },
+          {
+             "awardid":53,
+             "awardname":"BAFTA Film Award",
+             "awardfor":"Best Supporting Actress",
+             "year":2014,
+             "rolein":"American Hustle",
+             "actorid":12
+          },
+          {
+             "awardid":54,
+             "awardname":"Saturn Award",
+             "awardfor":"Best Actress",
+             "year":2013,
+             "rolein":"The Hunger Games",
+             "actorid":12
+          },
+          {
+             "awardid":55,
+             "awardname":"EDA Female Focus Award",
+             "awardfor":"Kick Ass Award for Best Female Action Star",
+             "year":2013,
+             "rolein":"The Hunger Games",
+             "actorid":12
+          },
+          {
+             "awardid":56,
+             "awardname":"ACCA",
+             "awardfor":"Best Actress in a Leading Role",
+             "year":2012,
+             "rolein":"Silver Linings Playbook",
+             "actorid":12
+          }
+       ]
+    },
+    {
+       "actorid":13,
+       "name":"Zoe",
+       "surname":"Saldana",
+       "middlename":null,
+       "birthdate":"1978-06-19",
+       "birthplace":"USA",
+       "height":1.7,
+       "marriage":true,
+       "children":3,
+       "siblings":3,
+       "startyear":2000,
+       "favfood":"chinese",
+       "favcolor":"blue",
+       "favbook":"The Brief Wondrous Life of Oscar Wao",
+       "films":[
+          {
+             "filmid":81,
+             "name":"Star Trek Beyond",
+             "director":"Justin Lin",
+             "year":2016
+          },
+          {
+             "filmid":82,
+             "name":"Guardians of the Galaxy",
+             "director":"James Gunn",
+             "year":2014
+          },
+          {
+             "filmid":83,
+             "name":"Guardians of the Galaxy Vol. 2",
+             "director":"James Gunn",
+             "year":2017
+          },
+          {
+             "filmid":84,
+             "name":"Avatar",
+             "director":"James Cameron",
+             "year":2009
+          },
+          {
+             "filmid":85,
+             "name":"Death at a Funeral",
+             "director":"Neil LaBute",
+             "year":2010
+          },
+          {
+             "filmid":86,
+             "name":"The Terminal",
+             "director":"Steven Spielberg",
+             "year":2004
+          },
+          {
+             "filmid":47,
+             "name":"Pirates of the Caribbean: The Curse of the Black Pearl",
+             "director":"Gore Verbinski",
+             "year":2003
+          },
+          {
+             "filmid":8,
+             "name":"Star Trek",
+             "director":"J.J. Abrams",
+             "year":2009
+          },
+          {
+             "filmid":7,
+             "name":"Star Trek Into Darkness",
+             "director":"J.J. Abrams",
+             "year":2013
+          },
+          {
+             "filmid":4,
+             "name":"Avengers: Infinity War",
+             "director":"Anthony Russo, Joe Russo",
+             "year":2018
+          },
+          {
+             "filmid":3,
+             "name":"Avengers: Endgame",
+             "director":"Anthony Russo, Joe Russo",
+             "year":2019
+          }
+       ],
+       "awards":[
+          {
+             "awardid":57,
+             "awardname":"Saturn Award",
+             "awardfor":"Best Actress",
+             "year":2010,
+             "rolein":"Avatar",
+             "actorid":13
+          },
+          {
+             "awardid":58,
+             "awardname":"DFCS Award",
+             "awardfor":"Best Ensemble",
+             "year":2014,
+             "rolein":"Guardians of the Galaxy",
+             "actorid":13
+          },
+          {
+             "awardid":59,
+             "awardname":"Huading Award",
+             "awardfor":"Best Global Supporting Actress in a Motion Picture",
+             "year":2014,
+             "rolein":"Star Trek Into Darkness",
+             "actorid":13
+          },
+          {
+             "awardid":60,
+             "awardname":"Teen Choice Award",
+             "awardfor":"Choice Movie Actress: Sci-Fi",
+             "year":2017,
+             "rolein":"Guardians of the Galaxy Vol. 2",
+             "actorid":13
+          }
+       ]
+    },
+    {
+       "actorid":5,
+       "name":"Helena",
+       "surname":"Bonham Carter",
+       "middlename":null,
+       "birthdate":"1966-05-26",
+       "birthplace":"USA",
+       "height":1.57,
+       "marriage":true,
+       "children":2,
+       "siblings":1,
+       "startyear":1983,
+       "favfood":"italian cuisine",
+       "favcolor":"red",
+       "favbook":"The Heart and The Bottle",
+       "films":[
+          {
+             "filmid":13,
+             "name":"Into the Woods",
+             "director":"Rob Marshall",
+             "year":2014
+          },
+          {
+             "filmid":14,
+             "name":"The Devil Wears Prada",
+             "director":"David Frankel",
+             "year":2006
+          },
+          {
+             "filmid":15,
+             "name":"The Young Victoria",
+             "director":"Jean-Marc Vall�e",
+             "year":2009
+          },
+          {
+             "filmid":16,
+             "name":"Enola Holmes",
+             "director":"Harry Bradbeer",
+             "year":2020
+          },
+          {
+             "filmid":17,
+             "name":"Alice in Wonderland",
+             "director":"Tim Burton",
+             "year":2010
+          },
+          {
+             "filmid":18,
+             "name":"Charlie and the Chocolate Factory",
+             "director":"Tim Burton",
+             "year":2005
+          },
+          {
+             "filmid":19,
+             "name":"Fight Club",
+             "director":"David Fincher",
+             "year":1999
+          },
+          {
+             "filmid":20,
+             "name":"Ocean's Eight",
+             "director":"Gary Ross",
+             "year":2018
+          },
+          {
+             "filmid":21,
+             "name":"Cinderella",
+             "director":"Kenneth Branagh",
+             "year":2015
+          },
+          {
+             "filmid":26,
+             "name":"Harry Potter and the Order of the Phoenix",
+             "director":"David Yates",
+             "year":2007
+          },
+          {
+             "filmid":27,
+             "name":"Harry Potter and the Half-Blood Prince",
+             "director":"David Yates",
+             "year":2009
+          },
+          {
+             "filmid":28,
+             "name":"Harry Potter and the Deathly Hallows � Part 1",
+             "director":"David Yates",
+             "year":2010
+          },
+          {
+             "filmid":29,
+             "name":"Harry Potter and the Deathly Hallows � Part 2",
+             "director":"David Yates",
+             "year":2011
+          },
+          {
+             "filmid":32,
+             "name":"Suffragette",
+             "director":"Sarah Gavron",
+             "year":2015
+          }
+       ],
+       "awards":[
+          {
+             "awardid":20,
+             "awardname":"Britannia Award",
+             "awardfor":"British Artist of the Year",
+             "year":2011,
+             "rolein":null,
+             "actorid":5
+          },
+          {
+             "awardid":21,
+             "awardname":"CinEuphoria",
+             "awardfor":"Best Supporting Actress - Audience Award",
+             "year":2011,
+             "rolein":"Alice in Wonderland",
+             "actorid":5
+          },
+          {
+             "awardid":22,
+             "awardname":"Empire Award",
+             "awardfor":"Best British Actress",
+             "year":2000,
+             "rolein":"Fight Club",
+             "actorid":5
+          },
+          {
+             "awardid":23,
+             "awardname":"Hollywood Film Award",
+             "awardfor":"Supporting Actress of the Year",
+             "year":2010,
+             "rolein":null,
+             "actorid":5
+          },
+          {
+             "awardid":24,
+             "awardname":"Emmy",
+             "awardfor":"Best Performance by an Actress",
+             "year":2010,
+             "rolein":"Enid",
+             "actorid":5
+          }
+       ]
+    },
+    {
+       "actorid":4,
+       "name":"Emma",
+       "surname":"Watson",
+       "middlename":"Charlotte Duerre",
+       "birthdate":"1990-04-15",
+       "birthplace":"France",
+       "height":1.65,
+       "marriage":false,
+       "children":0,
+       "siblings":4,
+       "startyear":1999,
+       "favfood":"mexican",
+       "favcolor":"light blue",
+       "favbook":"The Little Prince",
+       "films":[
+          {
+             "filmid":22,
+             "name":"Harry Potter and the Philosopher's Stone",
+             "director":"Chris Columbus",
+             "year":2001
+          },
+          {
+             "filmid":23,
+             "name":"Harry Potter and the Chamber of Secrets",
+             "director":"Chris Columbus",
+             "year":2002
+          },
+          {
+             "filmid":24,
+             "name":"Harry Potter and the Prisoner of Azkaban",
+             "director":"Alfonso Cuar�n",
+             "year":2004
+          },
+          {
+             "filmid":25,
+             "name":"Harry Potter and the Goblet of Fire",
+             "director":"Mike Newell",
+             "year":2005
+          },
+          {
+             "filmid":26,
+             "name":"Harry Potter and the Order of the Phoenix",
+             "director":"David Yates",
+             "year":2007
+          },
+          {
+             "filmid":27,
+             "name":"Harry Potter and the Half-Blood Prince",
+             "director":"David Yates",
+             "year":2009
+          },
+          {
+             "filmid":28,
+             "name":"Harry Potter and the Deathly Hallows � Part 1",
+             "director":"David Yates",
+             "year":2010
+          },
+          {
+             "filmid":29,
+             "name":"Harry Potter and the Deathly Hallows � Part 2",
+             "director":"David Yates",
+             "year":2011
+          },
+          {
+             "filmid":36,
+             "name":"Beauty and the Beast",
+             "director":"Bill Condon",
+             "year":2017
+          },
+          {
+             "filmid":37,
+             "name":"Noah",
+             "director":"Darren Aronofsky",
+             "year":2014
+          },
+          {
+             "filmid":38,
+             "name":"The Circle",
+             "director":"James Ponsoldt",
+             "year":2017
+          }
+       ],
+       "awards":[
+          {
+             "awardid":16,
+             "awardname":"Britannia Award",
+             "awardfor":"British Artist of the Year",
+             "year":2014,
+             "rolein":null,
+             "actorid":4
+          },
+          {
+             "awardid":17,
+             "awardname":"MTV Movie + TV Award",
+             "awardfor":"Best Actor in a Movie",
+             "year":2017,
+             "rolein":"Beauty and the Beast",
+             "actorid":4
+          },
+          {
+             "awardid":18,
+             "awardname":"National Movie Award",
+             "awardfor":"Best Performance by a Female",
+             "year":2007,
+             "rolein":"Harry Potter and the Order of the Phoenix",
+             "actorid":4
+          },
+          {
+             "awardid":19,
+             "awardname":"People's Choice Award",
+             "awardfor":"Favorite Dramatic Movie Actress",
+             "year":2013,
+             "rolein":null,
+             "actorid":4
+          }
+       ]
+    }
+ ]
