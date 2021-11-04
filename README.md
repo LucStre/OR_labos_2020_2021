@@ -1,7 +1,7 @@
 # OR_labos_2020_2021
 **License:** Creative Commons Zero v1.0 Universal<br>
 **Author:** Lucija Strejček<br>
-**Contant:** lucija.strejcek@fer.hr<br>
+**Contact:** lucija.strejcek@fer.hr<br>
 **Version:** 1.0<br>
 **Language:** English<br>
 **Title:** Actors<br>
