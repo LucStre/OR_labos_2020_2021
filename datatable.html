@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="//github.com/downloads/lafeber/world-flags-sprite/flags32.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.11.3/dataRender/datetime.js"></script>
+    <title>Actors - table</title>
+    <style>
+        .f32 .flag {
+            vertical-align: middle;
+            margin: -8px 0;
+        }
+        table.dataTable tr td {
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <table id="table_id" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Birth date</th>
+                <th>Birth place</th>
+                <th>Height</th>
+                <th>Start acting</th>
+                <th>Favorite color</th>
+                <th>Films</th>
+                <th>Awards</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        const table = new DataTable('#table_id', {
+            ajax: 'http://localhost:3000/data',
+            dataSrc: 'data',
+            columns: [
+                { data: 'name' },
+                { data: 'surname' },
+                { 
+                    data: 'birthdate',
+                    render: function ( data, type ) {
+                        if ( type === 'display' || type === 'filter' ) {
+                            date = new Date(data);
+                            return date.getFullYear()+'-' + (date.getMonth()+1) + '-'+date.getDate();
+                        }
+                        return data;
+                    }
+                },
+                { 
+                    className: 'f32',
+                    data: 'birthplace',
+                    render: function(data, type) {
+                        if (type === 'display') {
+                            let country = '';
+                            switch (data) {
+                                case 'UK':
+                                    country = 'gb';
+                                    break;
+                                case 'USA':
+                                    country = 'us';
+                                    break;
+                                case 'Australia':
+                                    country = 'au';
+                                    break;
+                                case 'France':
+                                    country = 'fr';
+                                    break;
+                            }
+    
+                            return '<span class="flag ' + country + '"></span> ';
+                        }
+                        return data;
+                    }
+                },
+                { data: 'height' },
+                { data: 'startyear' },
+                { data: 'favcolor' },
+                { 
+                    data: 'films',
+                    render: function(data, type){
+                        return data.split(",").join("<br/>");
+                    } 
+                },
+                { 
+                    data: 'awards',
+                    render: function(data, type){
+                        return data.split(",").join("<br/>");
+                    } 
+                },
+            ],
+        });
+    </script>
+</body>
+</html>
