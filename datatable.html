@@ -10,10 +10,14 @@
         type="text/css"
         href="//github.com/downloads/lafeber/world-flags-sprite/flags32.css"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.3.1/css/buttons.dataTables.min.css"/>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.11.3/dataRender/datetime.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.html5.min.js"></script>
     <title>Actors - table</title>
     <style>
         .f32 .flag {
@@ -26,6 +30,7 @@
     </style>
 </head>
 <body>
+    <h2 class="container">Open data about famous actors</h2>
     <table id="table_id" class="display">
         <thead>
             <tr>
@@ -34,6 +39,7 @@
                 <th>Birth date</th>
                 <th>Birth place</th>
                 <th>Height</th>
+                <th>Marriage</th>
                 <th>Start acting</th>
                 <th>Favorite color</th>
                 <th>Films</th>
@@ -41,67 +47,120 @@
             </tr>
         </thead>
         <tbody></tbody>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Birth date</th>
+                <th>Birth place</th>
+                <th>Height</th>
+                <th>Marriage</th>
+                <th>Start acting</th>
+                <th>Favorite color</th>
+                <th>Films</th>
+                <th>Awards</th>
+            </tr>
+        </tfoot>
     </table>
+    <footer></footer>
     <script>
-        const table = new DataTable('#table_id', {
-            ajax: 'http://localhost:3000/data',
-            dataSrc: 'data',
-            columns: [
-                { data: 'name' },
-                { data: 'surname' },
-                { 
-                    data: 'birthdate',
-                    render: function ( data, type ) {
-                        if ( type === 'display' || type === 'filter' ) {
-                            date = new Date(data);
-                            return date.getFullYear()+'-' + (date.getMonth()+1) + '-'+date.getDate();
-                        }
-                        return data;
-                    }
-                },
-                { 
-                    className: 'f32',
-                    data: 'birthplace',
-                    render: function(data, type) {
-                        if (type === 'display') {
-                            let country = '';
-                            switch (data) {
-                                case 'UK':
-                                    country = 'gb';
-                                    break;
-                                case 'USA':
-                                    country = 'us';
-                                    break;
-                                case 'Australia':
-                                    country = 'au';
-                                    break;
-                                case 'France':
-                                    country = 'fr';
-                                    break;
+        $(document).ready( function () {
+            $('#table_id tfoot th').each( function () {
+                var title = $(this).text();
+                console.log(title)
+                $(this).html( '<input type="text" placeholder="'+title+'" style="width: 90px"/>' );
+            } );
+        
+            $('#table_id').DataTable({
+                initComplete: function () {
+                    // Apply the search
+                    this.api().columns().every( function () {
+                        var that = this;
+        
+                        $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                            if ( that.search() !== this.value ) {
+                                that
+                                    .search( this.value )
+                                    .draw();
                             }
-    
-                            return '<span class="flag ' + country + '"></span> ';
+                        } );
+                    } );
+                },
+                dom: 'Bfrtip',
+                buttons: [
+                    'csv', 
+                    {
+                        text: 'JSON',
+                        action: function ( e, dt, button, config ) {
+                            var data = dt.buttons.exportData();
+        
+                            $.fn.dataTable.fileSave(
+                                new Blob( [ JSON.stringify( data ) ] ),
+                                'Actors.json'
+                            );
                         }
-                        return data;
                     }
-                },
-                { data: 'height' },
-                { data: 'startyear' },
-                { data: 'favcolor' },
-                { 
-                    data: 'films',
-                    render: function(data, type){
-                        return data.split(",").join("<br/>");
-                    } 
-                },
-                { 
-                    data: 'awards',
-                    render: function(data, type){
-                        return data.split(",").join("<br/>");
-                    } 
-                },
-            ],
+                ],
+                ajax: 'http://localhost:3000/data',
+                dataSrc: 'data',
+                columns: [
+                    { data: 'name' },
+                    { data: 'surname' },
+                    { 
+                        data: 'birthdate',
+                        render: function ( data, type ) {
+                            if ( type === 'display' || type === 'filter' ) {
+                                date = new Date(data);
+                                return date.getFullYear()+'-' + (date.getMonth()+1) + '-'+date.getDate();
+                            }
+                            return data;
+                        }
+                    },
+                    { 
+                        className: 'f32',
+                        data: 'birthplace',
+                        render: function(data, type) {
+                            if (type === 'display') {
+                                let country = '';
+                                switch (data) {
+                                    case 'UK':
+                                        country = 'gb';
+                                        break;
+                                    case 'USA':
+                                        country = 'us';
+                                        break;
+                                    case 'Australia':
+                                        country = 'au';
+                                        break;
+                                    case 'France':
+                                        country = 'fr';
+                                        break;
+                                }
+                                return '<span class="flag ' + country + '"></span> ' + data;
+                            }
+                            return data;
+                        }
+                    },
+                    { data: 'height' },
+                    { data: 'marriage' },
+                    { data: 'startyear' },
+                    { data: 'favcolor' },
+                    { 
+                        data: 'films',
+                        render: function(data, type){
+                            return data.split(",").join("<br/>");
+                        } 
+                    },
+                    { 
+                        data: 'awards',
+                        render: function(data, type){
+                            return data.split(",").join("<br/>");
+                        } 
+                    },
+                ],
+            });
         });
+
     </script>
 </body>
 </html>
