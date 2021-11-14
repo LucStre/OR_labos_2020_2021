@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/LucStre/OR_labos_2021_2022/blob/main/actors.json",
+  "title": "Actors",
+  "description": "Created open data about famous actors, some of their most famous movies and awards they've won",
+  "type": "array",
+  "properties": {
+    "actorid": {
+      "description": "The unique identifier for an actor",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Name of the actor",
+      "type": "string"
+    },
+    "surname": {
+      "description": "Surname of the actor",
+      "type": "string"
+    },
+    "middlename": {
+      "description": "Middle name of the actor",
+      "type": "string"
+    },
+    "birthdate": {
+      "description": "Actors date of birth",
+      "type": "date"
+    },
+    "birthplace": {
+      "description": "State where actor was born",
+      "type": "string"
+    },
+    "height": {
+      "description": "Actors height",
+      "type": "number"
+    },
+    "marriage": {
+      "description": "Is actor married",
+      "type": "boolean"
+    },
+    "children": {
+      "description": "Number of actors children",
+      "type": "integer"
+    },
+    "siblings": {
+      "description": "Number of actors siblings",
+      "type": "integer"
+    },
+    "startyear": {
+      "description": "Year when actor started acting",
+      "type": "integer"
+    },
+    "favfood": {
+      "description": "Actors favorite food",
+      "type": "string"
+    },
+    "favcolor": {
+      "description": "Actors favorite color",
+      "type": "string"
+    },
+    "favbook": {
+      "description": "Actors favorite book",
+      "type": "string"
+    },
+    "films": {
+      "description": "Films actor played in",
+      "type": "array",
+      "properties": {
+        "filmid": {
+          "description": "The unique identifier for a film",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Name of the film",
+          "type": "string"
+        },
+        "director": {
+          "description": "Name of the director of the film",
+          "type": "string"
+        },
+        "year": {
+          "description": "Year when film came out",
+          "type": "integer"
+        }
+      }
+    },
+    "awards": {
+        "description": "Awards that actor won",
+        "type": "array",
+        "properties": {
+          "awardid": {
+            "description": "The unique identifier for an award",
+            "type": "integer"
+          },
+          "awardname": {
+            "description": "Name of the award",
+            "type": "string"
+          },
+          "awardfor": {
+            "description": "Category of award",
+            "type": "string"
+          },
+          "year": {
+            "description": "Year actor won the award",
+            "type": "integer"
+          },
+          "rolein": {
+            "description": "Name of the film for which actor won the award",
+            "type": "string"
+          }
+        }
+      }
+    },
+  "required": [ "actorid", "name", "surname", "birthdate", "birthplace", "height", "marriage", "children", "siblings", "startyear" ]
+}
