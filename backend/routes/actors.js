@@ -214,4 +214,25 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+router.delete("/:id", async (req, res) => {
+  if (!Number.isInteger(Number(req.params.id))) {
+    res.status(400).send("Actor id must be integer!");
+  } else {
+    if (
+      (await (
+        await db.query("SELECT actorid FROM actor WHERE actorid = $1", [
+          req.params.id,
+        ])
+      ).rowCount) == 1
+    ) {
+      await db.query("DELETE FROM actor WHERE actorid = $1", [req.params.id]);
+      res.status(200).send("Actor deleted with id: " + req.params.id);
+    } else {
+      res
+        .status(404)
+        .send("Actor with id " + req.params.id + " does not exist.");
+    }
+  }
+});
+
 module.exports = router;
