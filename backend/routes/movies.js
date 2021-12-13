@@ -9,4 +9,12 @@ router.get("/", async (req, res) => {
   res.json({ data: data.rows });
 });
 
+router.get("/:title", async (req, res) => {
+  const data = await db.query(
+    "SELECT film.* FROM film WHERE LOWER(film.name) LIKE $1::text  GROUP BY film.filmid",
+    ["%" + req.params.title + "%"]
+  );
+  res.json({ data: data.rows });
+});
+
 module.exports = router;

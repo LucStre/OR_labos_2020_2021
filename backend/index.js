@@ -6,7 +6,6 @@ const { Client } = require("pg");
 const port = 3000;
 
 const actorsRouter = require("./routes/actors");
-const actorRouter = require("./routes/actor");
 const birthplaceRouter = require("./routes/birthplace");
 const isactingRouter = require("./routes/isacting");
 const marriedRouter = require("./routes/married");
@@ -30,7 +29,6 @@ app.get("/data", async (req, res) => {
 });
 
 app.use("/actors", actorsRouter);
-app.use("/actor", actorRouter);
 app.use("/birthplace", birthplaceRouter);
 app.use("/isacting", isactingRouter);
 app.use("/married", marriedRouter);
