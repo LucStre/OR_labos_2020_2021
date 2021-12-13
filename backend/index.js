@@ -11,12 +11,16 @@ const birthplaceRouter = require("./routes/birthplace");
 const isactingRouter = require("./routes/isacting");
 const marriedRouter = require("./routes/married");
 const movieRouter = require("./routes/movie");
+const moviesRouter = require("./routes/movies");
+const awardsRouter = require("./routes/awards");
 
 const client = new Client();
 
 const app = express();
 
 app.use(cors());
+
+app.use(express.json());
 
 app.get("/data", async (req, res) => {
   const data = await client.query(
@@ -31,6 +35,8 @@ app.use("/birthplace", birthplaceRouter);
 app.use("/isacting", isactingRouter);
 app.use("/married", marriedRouter);
 app.use("/movie", movieRouter);
+app.use("/movies", moviesRouter);
+app.use("/awards", awardsRouter);
 
 app.listen(port, async () => {
   await client.connect();
