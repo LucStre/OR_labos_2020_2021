@@ -7,7 +7,7 @@ const port = 3000;
 
 const actorsRouter = require("./routes/actors");
 const birthplaceRouter = require("./routes/birthplace");
-const isactingRouter = require("./routes/isacting");
+const actingRouter = require("./routes/acting");
 const marriedRouter = require("./routes/married");
 const movieRouter = require("./routes/movie");
 const moviesRouter = require("./routes/movies");
@@ -30,7 +30,7 @@ app.get("/data", async (req, res) => {
 
 app.use("/actors", actorsRouter);
 app.use("/birthplace", birthplaceRouter);
-app.use("/isacting", isactingRouter);
+app.use("/acting", actingRouter);
 app.use("/married", marriedRouter);
 app.use("/movie", movieRouter);
 app.use("/movies", moviesRouter);
