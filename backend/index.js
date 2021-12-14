@@ -12,6 +12,7 @@ const marriedRouter = require("./routes/married");
 const movieRouter = require("./routes/movie");
 const moviesRouter = require("./routes/movies");
 const awardsRouter = require("./routes/awards");
+const openapiRouter = require("./routes/openapi");
 
 const client = new Client();
 
@@ -35,6 +36,7 @@ app.use("/married", marriedRouter);
 app.use("/movie", movieRouter);
 app.use("/movies", moviesRouter);
 app.use("/awards", awardsRouter);
+app.use("/openapi", openapiRouter);
 
 app.listen(port, async () => {
   await client.connect();
