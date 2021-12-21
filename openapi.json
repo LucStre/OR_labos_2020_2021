@@ -110,7 +110,7 @@
                 }
             }
         }, 
-        "married": {
+        "/married": {
             "get": {
                 "summary": "Get all married actors",
                 "description": "Return actors that are married",
@@ -122,7 +122,7 @@
                 }
             }
         },
-        "birthplace/{place}": {
+        "/birthplace/{place}": {
             "get": {
                 "summary": "Get all actors from same birthplace",
                 "description": "Return actors that have place as their birthplace",
@@ -137,11 +137,14 @@
                 "responses": {
                     "200": {
                         "description": "Fetch successfull"
+                    },
+                    "404": {
+                        "description": "Actor with birthplace place does not exist."
                     }
                 }
             }
         },
-        "movie/{title}": {
+        "/movie/{title}": {
             "get": {
                 "summary": "Get all actors with movie",
                 "description": "Return actors and movies that contain title in their name",
@@ -160,7 +163,7 @@
                 }
             }
         },
-        "awards": {
+        "/awards": {
             "get": {
                 "summary": "Get all awards",
                 "description": "Return awards with actor who won it",
@@ -172,7 +175,7 @@
                 }
             }
         },
-        "movies": {
+        "/movies": {
             "get": {
                 "summary": "Get all movies",
                 "description": "Return movies with actors who play in that movie",
