@@ -108,109 +108,127 @@ router.post("/", async (req, res) => {
 });
 
 router.put("/:id", async (req, res) => {
-  if (Object.keys(req.body).length == 0) {
-    res.status(400).send("No columns stated in body, nothing to update.");
-  } else {
-    const data = await db.query(
-      "UPDATE actor SET name=$2, surname=$3, middlename=$4, birthdate=$5, birthplace=$6, height=$7, marriage=$8, children=$9, siblings=$10, startyear=$11, favfood=$12, favcolor=$13, favbook=$14 WHERE actorid = $1",
-      [
+  if (!Number.isInteger(Number(req.params.id))) {
+    res.status(400).send("Actor id must be integer!");
+  } else if (
+    (await (
+      await db.query("SELECT actorid FROM actor WHERE actorid = $1", [
         req.params.id,
-        req.body.name == undefined
-          ? await (
-              await db.query("SELECT name FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].name
-          : req.body.name,
-        req.body.surname == undefined
-          ? await (
-              await db.query("SELECT surname FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].surname
-          : req.body.surname,
-        req.body.middlename == undefined
-          ? await (
-              await db.query(
-                "SELECT middlename FROM actor WHERE actorid = $1",
-                [req.params.id]
-              )
-            ).rows[0].middlename
-          : req.body.middlename,
-        req.body.birthdate == undefined
-          ? await (
-              await db.query("SELECT birthdate FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].birthdate
-          : req.body.birthdate,
-        req.body.birthplace == undefined
-          ? await (
-              await db.query(
-                "SELECT birthplace FROM actor WHERE actorid = $1",
-                [req.params.id]
-              )
-            ).rows[0].birthplace
-          : req.body.birthplace,
-        req.body.height == undefined
-          ? await (
-              await db.query("SELECT height FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].height
-          : req.body.height,
-        req.body.marriage == undefined
-          ? await (
-              await db.query("SELECT marriage FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].marriage
-          : req.body.marriage,
-        req.body.children == undefined
-          ? await (
-              await db.query("SELECT children FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].children
-          : req.body.children,
-        req.body.siblings == undefined
-          ? await (
-              await db.query("SELECT siblings FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].siblings
-          : req.body.siblings,
-        req.body.startyear == undefined
-          ? await (
-              await db.query("SELECT startyear FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].startyear
-          : req.body.startyear,
-        req.body.favfood == undefined
-          ? await (
-              await db.query("SELECT favfood FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].favfood
-          : req.body.favfood,
-        req.body.favcolor == undefined
-          ? await (
-              await db.query("SELECT favcolor FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].favcolor
-          : req.body.favcolor,
-        req.body.favbook == undefined
-          ? await (
-              await db.query("SELECT favbook FROM actor WHERE actorid = $1", [
-                req.params.id,
-              ])
-            ).rows[0].favbook
-          : req.body.favbook,
-      ]
-    );
-    res.status(200).send("Actor " + req.params.id + " succefully updated.");
+      ])
+    ).rowCount) == 0
+  ) {
+    res.status(404).send("Actor with id " + req.params.id + " does not exist.");
+  } else {
+    if (Object.keys(req.body).length == 0) {
+      res.status(400).send("No columns stated in body, nothing to update.");
+    } else {
+      const data = await db.query(
+        "UPDATE actor SET name=$2, surname=$3, middlename=$4, birthdate=$5, birthplace=$6, height=$7, marriage=$8, children=$9, siblings=$10, startyear=$11, favfood=$12, favcolor=$13, favbook=$14 WHERE actorid = $1",
+        [
+          req.params.id,
+          req.body.name == undefined
+            ? await (
+                await db.query("SELECT name FROM actor WHERE actorid = $1", [
+                  req.params.id,
+                ])
+              ).rows[0].name
+            : req.body.name,
+          req.body.surname == undefined
+            ? await (
+                await db.query("SELECT surname FROM actor WHERE actorid = $1", [
+                  req.params.id,
+                ])
+              ).rows[0].surname
+            : req.body.surname,
+          req.body.middlename == undefined
+            ? await (
+                await db.query(
+                  "SELECT middlename FROM actor WHERE actorid = $1",
+                  [req.params.id]
+                )
+              ).rows[0].middlename
+            : req.body.middlename,
+          req.body.birthdate == undefined
+            ? await (
+                await db.query(
+                  "SELECT birthdate FROM actor WHERE actorid = $1",
+                  [req.params.id]
+                )
+              ).rows[0].birthdate
+            : req.body.birthdate,
+          req.body.birthplace == undefined
+            ? await (
+                await db.query(
+                  "SELECT birthplace FROM actor WHERE actorid = $1",
+                  [req.params.id]
+                )
+              ).rows[0].birthplace
+            : req.body.birthplace,
+          req.body.height == undefined
+            ? await (
+                await db.query("SELECT height FROM actor WHERE actorid = $1", [
+                  req.params.id,
+                ])
+              ).rows[0].height
+            : req.body.height,
+          req.body.marriage == undefined
+            ? await (
+                await db.query(
+                  "SELECT marriage FROM actor WHERE actorid = $1",
+                  [req.params.id]
+                )
+              ).rows[0].marriage
+            : req.body.marriage,
+          req.body.children == undefined
+            ? await (
+                await db.query(
+                  "SELECT children FROM actor WHERE actorid = $1",
+                  [req.params.id]
+                )
+              ).rows[0].children
+            : req.body.children,
+          req.body.siblings == undefined
+            ? await (
+                await db.query(
+                  "SELECT siblings FROM actor WHERE actorid = $1",
+                  [req.params.id]
+                )
+              ).rows[0].siblings
+            : req.body.siblings,
+          req.body.startyear == undefined
+            ? await (
+                await db.query(
+                  "SELECT startyear FROM actor WHERE actorid = $1",
+                  [req.params.id]
+                )
+              ).rows[0].startyear
+            : req.body.startyear,
+          req.body.favfood == undefined
+            ? await (
+                await db.query("SELECT favfood FROM actor WHERE actorid = $1", [
+                  req.params.id,
+                ])
+              ).rows[0].favfood
+            : req.body.favfood,
+          req.body.favcolor == undefined
+            ? await (
+                await db.query(
+                  "SELECT favcolor FROM actor WHERE actorid = $1",
+                  [req.params.id]
+                )
+              ).rows[0].favcolor
+            : req.body.favcolor,
+          req.body.favbook == undefined
+            ? await (
+                await db.query("SELECT favbook FROM actor WHERE actorid = $1", [
+                  req.params.id,
+                ])
+              ).rows[0].favbook
+            : req.body.favbook,
+        ]
+      );
+      res.status(200).send("Actor " + req.params.id + " succefully updated.");
+    }
   }
 });
 
