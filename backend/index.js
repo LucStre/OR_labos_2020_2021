@@ -38,6 +38,10 @@ app.use("/movies", moviesRouter);
 app.use("/awards", awardsRouter);
 app.use("/openapi", openapiRouter);
 
+app.use((req, res) => {
+  res.status(501).send("This route is not implemented");
+});
+
 app.listen(port, async () => {
   await client.connect();
   console.log(`Example app listening at http://localhost:${port}`);
