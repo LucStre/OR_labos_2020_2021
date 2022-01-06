@@ -36,6 +36,13 @@ app.get("/json", async (req, res) => {
   res.json({ data: data.rows });
 });
 
+app.get("/csv", async (req, res) => {
+  const data = await client.query(
+    "SELECT actor.*,  array_to_string(array_agg(distinct film), ' ') as films, array_to_string(array_agg(distinct award), ' ') as awards FROM actor LEFT JOIN acts ON actor.actorid = acts.actorid LEFT JOIN film ON film.filmid = acts.filmid LEFT JOIN award ON award.actorid = actor.actorid GROUP BY actor.actorid"
+  );
+  res.json({ data: data.rows });
+});
+
 app.use("/actors", actorsRouter);
 app.use("/birthplace", birthplaceRouter);
 app.use("/acting", actingRouter);

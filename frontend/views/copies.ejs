@@ -32,7 +32,7 @@
         <div style="width:1300px; margin:60px 60px 60px 60px;" class="card">
             <div style="text-align: center;">
                 <h5>You can download csv and json files here: </h5>
-                <a class="btn btn-info" href="http://localhost:5000/csv" role="button">
+                <a class="btn btn-info" onclick="onDownload(false)" role="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -40,7 +40,7 @@
                     </svg>
                     CSV
                 </a>
-                <a class="btn btn-info" onclick="onDownload()" role="button">
+                <a class="btn btn-info" onclick="onDownload(true)" role="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -79,10 +79,29 @@
         return response.json();
     }
 
-    async function onDownload() {
-        const data = await getData("http://localhost:5000/json");
-        //console.log({ data });
-        download(JSON.stringify(data), "actors.json", "text/plain");
+    async function onDownload(json) {
+        if (json) {
+            const data = await getData("http://localhost:5000/json");
+            console.log({ data });
+            download(JSON.stringify(data), "actors.json", "text/plain");
+        } else {
+            const data = await getData("http://localhost:5000/csv");
+            const csv = arrayToCSV(data);
+            download(csv, "actors.csv", "text/plain");
+        }
+
+    }
+    function arrayToCSV(data) {
+        csv = data.data.map(row => Object.values(row));
+        csv.unshift(Object.keys(data.data[0]));
+        for (var i = 0; i < csv.length; i++) {
+            for (var j = 0; j < csv[0].length; j++) {
+                if ((typeof csv[i][j] === 'string') && csv[i][j].indexOf(',')) {
+                    csv[i][j] = csv[i][j].replaceAll(',', ' ')
+                }
+            }
+        }
+        return csv.join('\n');
     }
 </script>
 
