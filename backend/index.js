@@ -13,6 +13,7 @@ const movieRouter = require("./routes/movie");
 const moviesRouter = require("./routes/movies");
 const awardsRouter = require("./routes/awards");
 const openapiRouter = require("./routes/openapi");
+const jsonldRouter = require("./routes/jsonld");
 
 const client = new Client();
 
@@ -51,6 +52,7 @@ app.use("/movie", movieRouter);
 app.use("/movies", moviesRouter);
 app.use("/awards", awardsRouter);
 app.use("/openapi", openapiRouter);
+app.use("/actor", jsonldRouter);
 
 app.use((req, res) => {
   res.status(501).send("This route is not implemented");
