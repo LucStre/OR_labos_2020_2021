@@ -186,6 +186,31 @@
                     }
                 }
             }
+        },
+        "/actor/{id}": {
+            "get": {
+                "summary": "Get actor with certain id",
+                "description": "Returns actor with certain id  based on schema.org specification",
+                "produces": ["application/json"],
+                "parameters": {
+                    "name": "id",
+                    "in": "path",
+                    "description": "ID of a certain actor",
+                    "required": true,
+                    "type": "integer"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Fetch successfull"
+                    },
+                    "400": {
+                        "description": "Invalid ID"
+                    },
+                    "404": {
+                        "description": "Actor with ID does not exist"
+                    }
+                }
+            }
         }
     }
 }
